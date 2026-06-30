@@ -16,17 +16,17 @@ The objective of this project is to build a predictive model that helps Human Re
 
 ---
 
-# Dataset Information
+## 📊 Dataset Information
 
 The dataset contains employee demographic, professional, and workplace-related information.
 
 ### Target Variable
 
-| Column    | Description                                   |
-| --------- | --------------------------------------------- |
-| Attrition | Whether an employee left the company (Yes/No) |
+| Column        | Description                                       |
+| ------------- | ------------------------------------------------- |
+| **Attrition** | Whether an employee left the company (**Yes/No**) |
 
-### Example Features
+### Features
 
 * Age
 * BusinessTravel
@@ -58,9 +58,9 @@ The dataset contains employee demographic, professional, and workplace-related i
 
 ---
 
-# Project Workflow
+## 📂 Project Workflow
 
-## 1. Data Understanding
+### 1️⃣ Data Understanding
 
 * Loaded the dataset using Pandas
 * Explored dataset dimensions
@@ -69,7 +69,7 @@ The dataset contains employee demographic, professional, and workplace-related i
 
 ---
 
-## 2. Data Cleaning
+### 2️⃣ Data Cleaning
 
 Performed data quality checks including:
 
@@ -77,28 +77,27 @@ Performed data quality checks including:
 * Duplicate record detection
 * Data consistency verification
 
-Results:
+**Results**
 
 * ✅ No missing values
 * ✅ No duplicate records
 
 ---
 
-## 3. Exploratory Data Analysis (EDA)
+### 3️⃣ Exploratory Data Analysis (EDA)
 
 Exploratory analysis was performed to understand employee behavior and identify factors associated with attrition.
 
-Examples include:
+The analyses include:
 
 * Employee Attrition Distribution
 * Department vs Attrition
 * Overtime vs Attrition
 * Monthly Income vs Attrition
 * Age vs Attrition
-* Business Travel vs Attrition
 * Work-Life Balance vs Attrition
 
-Key observations:
+**Key Observations**
 
 * Employees working overtime showed higher attrition.
 * Research & Development contained the largest workforce and the highest number of employees leaving.
@@ -106,7 +105,7 @@ Key observations:
 
 ---
 
-## 4. Data Preprocessing
+### 4️⃣ Data Preprocessing
 
 Preprocessing steps include:
 
@@ -117,11 +116,11 @@ Preprocessing steps include:
 
 ---
 
-## 5. Machine Learning Models
+### 5️⃣ Machine Learning Models
 
 Multiple classification algorithms are trained and compared.
 
-Examples:
+Models include:
 
 * Logistic Regression
 * Decision Tree
@@ -132,7 +131,7 @@ Examples:
 
 ---
 
-## 6. Model Evaluation
+### 6️⃣ Model Evaluation
 
 Evaluation metrics include:
 
@@ -148,7 +147,7 @@ Because the dataset is imbalanced, model performance is evaluated using metrics 
 
 ---
 
-# Technologies Used
+## 🛠️ Technologies Used
 
 * Python
 * Pandas
@@ -160,9 +159,9 @@ Because the dataset is imbalanced, model performance is evaluated using metrics 
 
 ---
 
-# Project Structure
+## 📁 Project Structure
 
-```
+```text
 Employee-Attrition-Prediction/
 │
 ├── data/
@@ -184,7 +183,7 @@ Employee-Attrition-Prediction/
 
 ---
 
-# Results
+## 📈 Results
 
 After comparing multiple machine learning models, the best-performing model was selected based on overall predictive performance rather than accuracy alone.
 
@@ -192,7 +191,7 @@ Special attention was given to Recall and F1-Score due to the class imbalance, e
 
 ---
 
-# Future Improvements
+## 🚀 Future Improvements
 
 * Hyperparameter tuning using GridSearchCV
 * Feature selection
@@ -205,7 +204,7 @@ Special attention was given to Recall and F1-Score due to the class imbalance, e
 
 ---
 
-# Learning Outcomes
+## 📚 Learning Outcomes
 
 This project demonstrates practical experience with:
 
@@ -220,7 +219,7 @@ This project demonstrates practical experience with:
 
 ---
 
-# Installation
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/yourusername/Employee-Attrition-Prediction.git
@@ -232,7 +231,7 @@ pip install -r requirements.txt
 
 ---
 
-# Run the Project
+## ▶️ Run the Project
 
 ```bash
 jupyter notebook
@@ -242,6 +241,6 @@ Open the notebook and run all cells sequentially.
 
 ---
 
-# License
+## 📄 License
 
 This project is intended for educational and portfolio purposes.

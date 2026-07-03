@@ -107,12 +107,18 @@ The analyses include:
 
 ### 4️⃣ Data Preprocessing
 
-Preprocessing steps include:
+### 4️⃣ Data Preprocessing
 
-* Label Encoding
-* One-Hot Encoding (where appropriate)
-* Feature Scaling
-* Train/Test Split
+The dataset was prepared for machine learning by performing the following preprocessing steps:
+
+- Removed non-informative features (`EmployeeCount`, `EmployeeNumber`, and `StandardHours`)
+- Separated features (`X`) and target variable (`y`)
+- Encoded the target variable using `LabelEncoder`
+- Applied One-Hot Encoding to categorical features
+- Split the dataset into training and testing sets using a stratified split (80/20)
+- Standardized the feature values using `StandardScaler`
+
+Status: ✅ Complete
 
 ---
 
@@ -162,24 +168,37 @@ Because the dataset is imbalanced, model performance is evaluated using metrics 
 ## 📁 Project Structure
 
 ```text
-Employee-Attrition-Prediction/
+IBM-HR-Employee-Attrition/
 │
 ├── data/
-│   └── employee_attrition.csv
+│   └── raw/
+│       └── WA_Fn-UseC_-HR-Employee-Attrition.csv
 │
 ├── notebooks/
-│   └── Employee_Attrition_EDA.ipynb
-│
-├── models/
-│
-├── images/
-│
-├── requirements.txt
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_exploratory_data_analysis.ipynb
+│   └── 03_data_preprocessing.ipynb
 │
 ├── README.md
+├── requirements.txt
+└── .gitignore
 │
 └── LICENSE
+
+
 ```
+
+## 📌 Current Progress
+
+The following project stages have been completed:
+
+- ✅ Data Understanding
+- ✅ Exploratory Data Analysis (EDA)
+- ✅ Data Preprocessing
+
+The next phase is model training and evaluation using multiple machine learning classification algorithms.
+
+
 
 ---
 

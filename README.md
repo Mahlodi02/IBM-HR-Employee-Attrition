@@ -126,30 +126,45 @@ Status: ✅ Complete
 
 Multiple classification algorithms are trained and compared.
 
-Models include:
 
-* Logistic Regression
-* Decision Tree
-* Random Forest
-* Support Vector Machine (SVM)
-* K-Nearest Neighbors (KNN)
-* XGBoost *(optional)*
+The first machine learning classification model has been implemented and evaluated.
 
+**Completed**
+
+- ✅ Logistic Regression
+
+**Planned**
+
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+- XGBoost *(optional)*
+
+Status: 🚧 In Progress
 ---
 
 ### 6️⃣ Model Evaluation
 
-Evaluation metrics include:
+The Logistic Regression model was evaluated using multiple classification metrics.
 
-* Accuracy
-* Precision
-* Recall
-* F1 Score
-* ROC-AUC Score
-* Confusion Matrix
-* Classification Report
+**Evaluation Metrics**
 
-Because the dataset is imbalanced, model performance is evaluated using metrics beyond accuracy.
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- Classification Report
+
+**Initial Results**
+
+- Accuracy: **86.05%**
+- The model performs well in predicting employees who stay.
+- The model achieves low recall for employees who leave, indicating that many attrition cases are missed.
+- These results establish a baseline for comparing more advanced machine learning models.
+
+Status: 🚧 In Progress
 
 ---
 
@@ -177,7 +192,8 @@ IBM-HR-Employee-Attrition/
 ├── notebooks/
 │   ├── 01_data_understanding.ipynb
 │   ├── 02_exploratory_data_analysis.ipynb
-│   └── 03_data_preprocessing.ipynb
+│   ├── 03_data_preprocessing.ipynb
+│   └── 04_model_training_lr.ipynb
 │
 ├── README.md
 ├── requirements.txt
@@ -195,8 +211,10 @@ The following project stages have been completed:
 - ✅ Data Understanding
 - ✅ Exploratory Data Analysis (EDA)
 - ✅ Data Preprocessing
+- ✅ Logistic Regression Model Training
+- ✅ Logistic Regression Model Evaluation
 
-The next phase is model training and evaluation using multiple machine learning classification algorithms.
+The next phase is to train and compare additional machine learning models to 
 
 
 
@@ -204,9 +222,11 @@ The next phase is model training and evaluation using multiple machine learning 
 
 ## 📈 Results
 
-After comparing multiple machine learning models, the best-performing model was selected based on overall predictive performance rather than accuracy alone.
+The first machine learning model, **Logistic Regression**, achieved an overall accuracy of **86.05%** on the test dataset.
 
-Special attention was given to Recall and F1-Score due to the class imbalance, ensuring that employees at risk of leaving are identified more effectively.
+Although the model performed well at predicting employees who remained with the company, it struggled to identify employees who were likely to leave because of the class imbalance in the dataset. The evaluation highlighted the importance of using metrics such as **Recall** and **F1-score**, rather than relying solely on accuracy.
+
+The Logistic Regression model serves as the baseline for evaluating and comparing additional machine learning models in the next phase of the project.
 
 ---
 
@@ -235,6 +255,8 @@ This project demonstrates practical experience with:
 * Model Evaluation
 * Handling Imbalanced Datasets
 * End-to-End Machine Learning Workflow
+* Logistic Regression
+* Classification Model Evaluation
 
 ---
 

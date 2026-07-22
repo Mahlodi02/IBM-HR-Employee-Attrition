@@ -107,8 +107,6 @@ The analyses include:
 
 ### 4️⃣ Data Preprocessing
 
-### 4️⃣ Data Preprocessing
-
 The dataset was prepared for machine learning by performing the following preprocessing steps:
 
 - Removed non-informative features (`EmployeeCount`, `EmployeeNumber`, and `StandardHours`)
@@ -124,21 +122,21 @@ Status: ✅ Complete
 
 ### 5️⃣ Machine Learning Models
 
-Multiple classification algorithms are trained and compared.
+Multiple supervised machine learning classification algorithms were trained and evaluated using the preprocessed dataset.
 
-
-The first machine learning classification model has been implemented and evaluated.
-
-**Completed**
+**Completed Models**
 
 - ✅ Logistic Regression
+- ✅ Decision Tree
+- ✅ Random Forest
+- ✅ Support Vector Machine (SVM)
+- ✅ K-Nearest Neighbors (KNN)
 
 **Planned**
 
-- Decision Tree
-- Random Forest
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
+- Hyperparameter Tuning
+- Model Optimization
+- Final Model Selection
 - XGBoost *(optional)*
 
 Status: 🚧 In Progress
@@ -146,7 +144,7 @@ Status: 🚧 In Progress
 
 ### 6️⃣ Model Evaluation
 
-The Logistic Regression model was evaluated using multiple classification metrics.
+Each machine learning model was evaluated using multiple classification metrics.
 
 **Evaluation Metrics**
 
@@ -157,14 +155,9 @@ The Logistic Regression model was evaluated using multiple classification metric
 - Confusion Matrix
 - Classification Report
 
-**Initial Results**
+Since the dataset is imbalanced, model performance was evaluated using Recall and F1-score in addition to Accuracy.
 
-- Accuracy: **86.05%**
-- The model performs well in predicting employees who stay.
-- The model achieves low recall for employees who leave, indicating that many attrition cases are missed.
-- These results establish a baseline for comparing more advanced machine learning models.
-
-Status: 🚧 In Progress
+Status: ✅ Completed
 
 ---
 
@@ -193,7 +186,11 @@ IBM-HR-Employee-Attrition/
 │   ├── 01_data_understanding.ipynb
 │   ├── 02_exploratory_data_analysis.ipynb
 │   ├── 03_data_preprocessing.ipynb
-│   └── 04_model_training_lr.ipynb
+│   ├── 04_model_training_lr.ipynb
+|   ├── 05_decision_tree.ipynb
+|   ├── 06_random_forest.ipynb
+|   ├── 07_support_vector_machine.ipynb
+|   ├── 08_knn.ipynb
 │
 ├── README.md
 ├── requirements.txt
@@ -209,12 +206,16 @@ IBM-HR-Employee-Attrition/
 The following project stages have been completed:
 
 - ✅ Data Understanding
+- ✅ Data Cleaning
 - ✅ Exploratory Data Analysis (EDA)
 - ✅ Data Preprocessing
-- ✅ Logistic Regression Model Training
-- ✅ Logistic Regression Model Evaluation
+- ✅ Logistic Regression
+- ✅ Decision Tree
+- ✅ Random Forest
+- ✅ Support Vector Machine (SVM)
+- ✅ K-Nearest Neighbors (KNN)
 
-The next phase is to train and compare additional machine learning models to 
+The next phase of the project is to compare the trained models, perform hyperparameter tuning, improve model performance, and select the best model for employee attrition prediction.
 
 
 
@@ -222,11 +223,19 @@ The next phase is to train and compare additional machine learning models to
 
 ## 📈 Results
 
-The first machine learning model, **Logistic Regression**, achieved an overall accuracy of **86.05%** on the test dataset.
+Five supervised machine learning classification models have been trained and evaluated.
 
-Although the model performed well at predicting employees who remained with the company, it struggled to identify employees who were likely to leave because of the class imbalance in the dataset. The evaluation highlighted the importance of using metrics such as **Recall** and **F1-score**, rather than relying solely on accuracy.
+| Model | Accuracy |
+|--------|---------:|
+| Logistic Regression | **86.05%** |
+| Decision Tree | 75.85% |
+| Random Forest | 83.33% |
+| Support Vector Machine (SVM) | **86.73%** |
+| K-Nearest Neighbors (KNN) | 84.69% |
 
-The Logistic Regression model serves as the baseline for evaluating and comparing additional machine learning models in the next phase of the project.
+Although Support Vector Machine achieved the highest overall accuracy, Logistic Regression provided the best balance between Accuracy, Precision, Recall, and F1-score for predicting employee attrition.
+
+Since the dataset is imbalanced, Recall and F1-score were considered alongside Accuracy when evaluating model performance.
 
 ---
 
@@ -245,18 +254,23 @@ The Logistic Regression model serves as the baseline for evaluating and comparin
 
 ## 📚 Learning Outcomes
 
+## 📚 Learning Outcomes
+
 This project demonstrates practical experience with:
 
-* Data Cleaning
-* Exploratory Data Analysis
-* Feature Engineering
-* Data Visualization
-* Classification Algorithms
-* Model Evaluation
-* Handling Imbalanced Datasets
-* End-to-End Machine Learning Workflow
-* Logistic Regression
-* Classification Model Evaluation
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Visualization
+- Data Preprocessing
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+- Classification Model Evaluation
+- Handling Imbalanced Datasets
+- End-to-End Machine Learning Workflow
 
 ---
 
